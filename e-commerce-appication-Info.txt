@@ -1,0 +1,4 @@
+https://rahulshettyacademy.com/client/auth/register
+Name:-apiTesting
+gmail:-apiTesting@gmail.com
+Password:-ABC123abc
