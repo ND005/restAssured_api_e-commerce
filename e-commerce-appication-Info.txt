@@ -2,3 +2,41 @@ https://rahulshettyacademy.com/client/auth/register
 Name:-apiTesting
 gmail:-apiTesting@gmail.com
 Password:-ABC123abc
+
+End point of login
+-------------------------
+https://rahulshettyacademy.com/api/ecom/auth/login
+
+End point to Add product
+-------------------------
+End point:- https://rahulshettyacademy.com/api/ecom/product/add-product
+Form Data
+productName:Puma Shoes
+productAddedBy:{UserID}
+productSubCategory:fashion
+productCategory:shoes
+productPrice:6999
+productDescription:Puma brown shoes
+productFor:men
+productImage:{Path}
+
+End point of add to cart
+-------------------------
+https://rahulshettyacademy.com/api/ecom/user/add-to-cart
+Required pay load
+
+End point get Order details
+----------------------------
+https://rahulshettyacademy.com/api/ecom/order/get-orders-details?{key=value}
+Required ID
+
+End point to Delete
+------------------------
+https://rahulshettyacademy.com/api/ecom/product/delete-product/{productId}
+
+Test Steps :-
+Step 1:- Login using API.
+Step 2:- Create a product using above End point.
+Step 3:- Create a purchase order through New end-point.
+Step 4:- Verify the created order and description of it.
+Step 5:- Delete created order.
