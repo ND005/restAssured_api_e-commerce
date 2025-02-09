@@ -10,6 +10,8 @@ https://rahulshettyacademy.com/api/ecom/auth/login
 End point to Add product
 -------------------------
 End point:- https://rahulshettyacademy.com/api/ecom/product/add-product
+Authorization(Token):
+
 Form Data
 productName:Puma Shoes
 productAddedBy:{UserID}
@@ -23,16 +25,20 @@ productImage:{Path}
 End point of add to cart
 -------------------------
 https://rahulshettyacademy.com/api/ecom/user/add-to-cart
-Required pay load
+Authorization(Token):
+Body:
 
 End point get Order details
 ----------------------------
 https://rahulshettyacademy.com/api/ecom/order/get-orders-details?{key=value}
-Required ID
+Orders:
+Authorization(Token):
 
 End point to Delete
 ------------------------
 https://rahulshettyacademy.com/api/ecom/product/delete-product/{productId}
+productOrderId:
+Authorization(Token):
 
 Test Steps :-
 Step 1:- Login using API.
