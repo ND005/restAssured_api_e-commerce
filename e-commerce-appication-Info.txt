@@ -41,7 +41,7 @@ productOrderId:
 Authorization(Token):
 
 Test Steps :-
-Step 1:- Login using API.
+Step 1:- Login using API. - Done
 Step 2:- Create a product using above End point.
 Step 3:- Create a purchase order through New end-point.
 Step 4:- Verify the created order and description of it.
