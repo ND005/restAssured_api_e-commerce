@@ -74,10 +74,8 @@ public class TS_EcommerceE2ETest {
 		System.out.println(":::CREATE ORDER PROCESS:::STARTED:::");
 		// Adding values in sub list
 		createOrderSubRequest SubRequest = new createOrderSubRequest();
-
 		SubRequest.setCountry("India");
 		SubRequest.setProductOrderedId(CreateResp.getProductId().toString());
-
 		// Converting that sublist into array
 		List<createOrderSubRequest> cosr = new ArrayList<createOrderSubRequest>();
 		// Adding that array value into class with return type of array
@@ -90,8 +88,10 @@ public class TS_EcommerceE2ETest {
 		RequestSpecification RequestSpec = new RequestSpecBuilder().setBaseUri("https://rahulshettyacademy.com")
 				.addHeader("Authorization", loginResp.getToken().toString()).setContentType(ContentType.JSON).build();
 		RequestSpecification createOrder = given().spec(RequestSpec).body(CreateOrderReq);
+		
 		OrderResp = createOrder.when().post("api/ecom/order/create-order").then().extract()
 				.as(createOrderResponce.class);
+		
 		System.out.println(":::PRODUCT ORDER ID:::" + OrderResp.getProductOrderId().get(0));
 		System.out.println(":::PRODUCT ORDER:::" + OrderResp.getOrders().get(0));
 		System.out.println(":::ORDER CREATED:::DONE:::");
